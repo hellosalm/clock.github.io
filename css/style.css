@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Utility here start  */
+body,.time,.left-side,.right-side,.right-top,.right-down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    min-height: 80vh;
+    background-color: green;
+}
+.digital-clock,.time,.right-side,.right-top,.right-down{
+    position: relative;
+}
+
+
+
+/* Layout here  */
+.digital-clock{
+    color: white;
+    background-color: aqua;
+    width: 425px;
+    padding: 20px 45px;
+    box-shadow: 0.5px.25px rgba(14,21,37,.8);
+    border-radius: 10px;
+}
+
+
+#hours{
+    font-weight: 600x;
+    padding: 0px 10px;
+    line-height: 125px;
+    font-size: 8rem;
+    background: -webkit-linear-gradient(90deg, blue,white);-webkit-text-fill-color: transparent;-webkit-background-clip: text;
+}
+.right-side{
+    flex-direction: column;
+
+}
+#dots{
+    font-size: 4rem;
+    transform: translateY(-3px);
+    color: gray;
+}
+#minutes{
+    font-size: 4rem;
+    font-weight: 500;
+    margin-left: 10px;
+    background: -webkit-linear-gradient(90deg, rgb(244, 127, 232),white);-webkit-text-fill-color: transparent;-webkit-background-clip: text;
+    transform: translateY(10px);
+}
+.right-down{
+    margin-left: 10px;
+    transform: translateY(-1px);
+}
+#period,#second{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-left: 10px;
+}
+#period{
+    color: rgb(255, 244, 38);
+}
+#second{
+    color: rgb(243, 250, 44);
+}
